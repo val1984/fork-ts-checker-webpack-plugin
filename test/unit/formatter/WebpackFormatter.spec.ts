@@ -53,7 +53,7 @@ describe('formatter/WebpackFormatter', () => {
 
   it('formats issue header like webpack', () => {
     expect(formatter(issue)).toEqual(
-      [`ERROR in some/file.ts 1:7-16`, 'TS123: Some issue content', ''].join(os.EOL)
+      [`ERROR in some/file.ts:1:7-16`, 'TS123: Some issue content', ''].join(os.EOL)
     );
   });
 });
